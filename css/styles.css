@@ -1,0 +1,729 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   font-size: 14px;
+}
+
+
+body {
+   width: auto; 
+   font-family: 'Raleway', sans-serif;
+   margin: auto;
+}
+
+.logo img {
+
+   width: 30%;
+   margin: 0 70px;
+
+}
+
+/*.filtres-select {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}*/
+
+h1 {
+   font-size: 18px;
+}
+
+h2 {
+   font-size: 14px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.header-text {
+   padding: 0 60px;
+}
+
+/* NAVBAR */
+
+.navbar {
+   display:flex;
+   align-items: center; /* sens vertical au centre */
+   justify-content: space-between; /* sens horizontal avec un espace égal entre eux*/
+}
+
+.menu {
+   display: flex;
+   flex-direction: row-reverse; /* les éléments sont disposés dans la direction opposée au texte*/
+}
+   
+.menu a {
+   /* display: flex;
+    justify-content: flex-end;*/
+   /* position: relative;
+   top: -60px;
+   display: inline-block;
+   float: right;
+   */
+   color: black;
+   border-top:2px solid white;
+   padding: 30px 20px;
+}
+
+.menu a:hover { /*survole*/
+   color: #0065FC;
+   border-color: #0065FC;
+}
+
+img {
+   position: static;
+   width: 12%;
+}
+
+.form {
+   display: flex;
+   align-items: center;
+   max-width: 300px;
+   border-color: #F2F2F2;
+}
+
+.input-icone {
+
+   border-radius: 15px 0 0 15px;
+   padding: 13px;
+   background-color: #F2F2F2;
+}
+
+.form .recherche-bouton-icon {
+   display: none; /* fait disparaitre l'élément*/
+}
+
+.form i { 
+   color:black;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.recherche-bouton {
+   border-radius: 0 10px 10px 0;
+   border-color: #0065FC;
+   background-color: #0065FC;
+   color: white;
+   padding: 10px;
+   /* margin: -5px; */
+   /* width: 32%; */
+}
+
+.champ {
+   padding: 10px;
+   width: 60%;
+   border-color: #F2F2F2;
+}
+
+.menu li {
+   padding: 20px;
+   font-size: 18px;
+}
+
+.filtres {
+   gap:20px; /* espacement entre ligne et les colonne*/
+   display: flex;
+   margin-top: 30px;
+
+}
+
+.filtres-select {
+   display: flex;
+   font-weight: bold;
+}
+
+/*.filtres .arrondi li {
+    width: 100px;
+    box-sizing: border-box;
+ } */
+
+.arrondi {
+   border-radius: 50px;
+   border: 2px solid #F2F2F2;
+   display: flex;
+   padding-right: 20px;
+   align-items: center;
+   font-weight: bold;
+   margin: 0 20px;
+
+}
+
+.arrondi:hover {
+
+   transform: scale(1.1);
+}
+
+.filter-icon-container {
+   color: #0065FC;
+   border-radius: 50%;
+   background-color: #DEEBFF;
+   width:50px;
+   height:50px;
+   position: relative;
+   margin-right: 15px;
+}
+
+.filter-icon-container i {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); /*centrer l'icone par rapport à son conteneur*/
+}
+
+.info {
+
+   display: flex;
+   align-items: center;
+   margin: 30px 0;
+}
+
+.icon-info {
+   color: #0065FC;
+   border-radius: 50%; 
+   padding: 5px; 
+   border: 1px solid #F5F5F5;
+   padding-left: 8px; 
+   padding-right: 8px;
+   margin: 0 10px;
+}
+
+
+.hebergements {
+
+   border-radius: 12px;
+   background-color: #F5F5F5;
+   width: 60%;
+
+}
+.hebergements h1, .hebergements h4 {
+
+   padding: 0 20px;
+}
+
+.cannebiere,
+.port,
+.mouettes,
+.mer,
+.panier,
+.amina {
+   border-radius: 13px;
+   border: 5px solid;
+   border-color: white;
+   background-color: white;
+   width: 28%;
+   box-shadow: 0 4px 8px 0 hsla(180, 11%, 96%, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 200px;
+   margin: 20px;
+   padding-bottom: 210px;
+}
+
+.cannebiere:hover,
+.port:hover,
+.mouettes:hover,
+.mer:hover,
+.panier:hover,
+.amina:hover { /*survole*/
+
+   transform: scale(1.1);
+}
+
+.hebergements img {
+   width: 100%;
+   border-radius: 13px 13px 0 0;
+   height: 120px;
+   object-fit: cover; /* ajuste la taille de l'image à son conteneur*/
+
+}
+
+.contenair {
+
+   display: flex;
+   flex-wrap: wrap; /*les éléments s'alignent sur plusieurs ligne*/
+   justify-content: space-around;
+}
+
+.hebergements p {
+
+   margin-top: -20px;
+}
+
+.icone-hebergement {
+   margin-top: -10px;
+}
+
+.coeur, .matin, .bleu-blanc {
+   border-radius: 13px;
+   border: 5px solid;
+   border-color: white;
+   background-color: white;
+   width: 88%;
+   box-shadow: 0 4px 8px 0 hsla(180, 11%, 96%, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   margin: 20px; 
+   display: flex;
+   height: 130px;
+}
+
+.matin:hover,
+.coeur:hover,
+.bleu-blanc:hover { 
+
+   transform: scale(1.1);
+}
+
+.populaire {
+
+   border-radius: 15px;
+   background-color: #F5F5F5;
+   width: 25%;
+}
+
+.populaire i, .hebergements i {
+   color: #0065FC;;
+}
+
+.etoile-avis i {
+
+   color:#F2F2F2;
+}
+.cartes {
+
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.cartes .fa-solid {
+
+   font-size: 5px;
+}
+
+.cartes a {
+   color: black;
+}
+
+.verticale {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.star {
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 20px;
+}
+
+.star i {
+
+   color: black;
+}
+
+.carte-populaire  {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin-left: 10px;
+}
+
+.populaire-img {
+
+   width: 50%;
+}
+
+.populaire img {
+   width: 90%;
+   border-radius: 13px 0 0 13px;
+   height: 120px;
+   object-fit: cover;
+}
+
+
+.port-activites, .parc-national{
+
+   border-radius: 13px;
+   border: 5px solid;
+   border-color: white;
+   background-color: white;
+   width: 45%;
+   box-shadow: 0 4px 8px 0 hsla(180, 11%, 96%, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 385px;
+   margin: 20px;
+}
+
+.activites-mer p, .activites-parc p {
+
+   font-weight: bold;
+   color: black;
+}
+
+.port-activites img, .parc-national img {
+
+   width: 104%;
+   border-radius: 13px 13px 0 0;
+   height: 350px;
+   margin: -5px;
+   object-fit: cover;
+}
+
+.fort, .notre-dame {
+
+   border-radius: 13px;
+   border: 5px solid;
+   border-color: white;
+   background-color: white;
+   width: 86%;
+   box-shadow: 0 4px 8px 0 hsla(180, 11%, 96%, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 215px;   
+   margin: 20px;
+}
+
+.fort img, .notre-dame img {
+
+   width: 104%;
+   border-radius: 13px 13px 0 0;
+   height: 180px;
+   margin: -5px;
+   object-fit: cover;
+}
+
+.iles, .parc-longchamp {
+
+   border-radius: 13px;
+   border: 5px solid;
+   border-color: white;
+   background-color: white;
+   width: 86%;
+   box-shadow: 0 4px 8px 0 hsla(180, 11%, 96%, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 150px;   
+   margin: 20px;
+}
+
+.port-activites:hover,
+.parc-national:hover,
+.fort:hover,
+.iles:hover,
+.parc-longchamp:hover,
+.notre-dame:hover {
+
+   transform: scale(1.1);
+}
+
+
+.iles img, .parc-longchamp img {
+
+   width: 104%;
+   border-radius: 13px 13px 0 0;
+   height: 115px;
+   margin: -5px;
+}
+
+.activites {
+
+   width: auto;
+   display: flex;
+   margin: 0 50px;
+}
+
+.titre-activites {
+   padding-left: 65px;
+   margin: 0;
+   margin-top: 35px;
+}
+
+
+.activites-mer, .activites-parc {
+   width: 50%;
+   display: flex;
+
+}
+
+.activites-mer {
+
+   margin: auto;
+}
+
+.port-activites-carte {
+
+   width: 48%;
+   justify-content: flex-end;
+}
+
+#activites a {
+
+   color: black;
+}
+
+footer {
+
+   display: flex;
+   padding:30px 60px;
+   justify-content: space-around;
+   background-color: #F5F5F5;
+   margin-top: 40px;
+}
+
+.footer-propos, .footer-hebergements, .footer-assistance {
+   flex: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+   h1 {
+      font-size: 14px;
+   }
+   
+   h2 {
+      font-size: 10px;
+   }
+
+   p {
+
+      font-size: 8px;
+   }
+   .hebergements{
+
+   	width: 50%;
+   }
+
+   .cannebiere, .port, .mouettes, .mer, .panier, .amina {
+   	width: 40%;
+   	height: 150px;
+   }
+
+   .populaire {
+
+   	width: 40%;
+   }
+   
+
+} 
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+   /* mobile */
+
+   /* NAVBAR */
+
+   .header-text {
+      padding: 0 15px;
+   }
+
+   .navbar {
+      flex-direction: column;
+   }
+
+   .logo {
+      text-align: center;
+   }
+
+   /*.logo a {
+      display: block
+   }*/
+
+   .logo img {
+      
+      width: auto;
+      margin-left: 100px;
+      height: 40px;
+   }
+
+   .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse; /* l'élément s'affiche dans la direction opposée au texte */
+   }
+
+   .menu a {
+      flex:1;
+      color: black;
+      border-top: none;
+      border-bottom:2px solid gray;
+      padding: 20px;
+      text-align: center;
+   }
+
+   .form {
+      display: flex;
+   }
+
+   .form i {
+
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+   .recherche-bouton {
+      padding: 11px;
+
+   }
+
+   .champ {
+      padding: 10px;
+      width: 70%;
+   }
+
+   .input-icone .recherche-bouton {
+      display: none;
+   }
+
+   .recherche-bouton-texte {
+      display: none;
+   }
+
+   .form .recherche-bouton-icon {
+      display: block;
+      color: white;
+      /*background-color: hwb(213 24% 12%);
+            border-radius: 20%;*/
+      
+   }
+
+   .filtres {
+
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 0;
+   }
+
+   .filtres-select {
+      flex-wrap: wrap; /* les éléments s'alignent selon l'espace du conteneur */
+      /*margin-left: -15px;*/
+   }
+
+   .filter-icon-container {
+
+      margin-right: 5px;
+   }
+
+   .info {
+
+      margin: 10px -10px;
+   }
+
+   div .arrondi {
+      margin: 5px 0;
+      padding-right: 10px;
+   }
+
+   .cartes {
+
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+   }
+
+   .populaire {
+     width: auto;
+      height: 550px;
+      border-radius: 0;
+   }
+
+   .matin, .coeur, .bleu-blanc {
+
+      width: 92%;
+      margin: 10PX;
+   }
+
+   .star {
+
+      width: 90%;
+   }
+
+   .hebergements {
+
+      background-color: transparent;
+      width: 100%;
+   }
+
+   .hebergements img {
+
+      width: 280px;
+      height: 95px;
+   }
+
+   .cannebiere,
+   .port,
+   .mouettes,
+   .mer,
+   .panier,
+   .amina  {
+
+      width: 91%;
+      padding: 0;
+      height: 165px;
+      margin: 7px 0;
+   }
+
+   .description-hebergement {
+
+      margin-top: -25px;
+   }
+
+   .activites {
+
+      display: flex;
+      flex-direction: column;
+      margin: 7px 0;
+
+   }
+
+   .activites-mer, .activites-parc {
+
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+   }
+
+   .port-activites-carte {
+
+      width: 100%;
+   }
+
+   .port-activites, .fort, .iles, .parc-national, .notre-dame, .parc-longchamp {
+
+      width: 88%;
+      padding: 0;
+      height: 165px;
+      margin-top: 0;
+   }
+
+   .port-activites img, .fort img, .iles img, .parc-national img, .notre-dame img, .parc-longchamp img {
+
+      height: 125px;
+
+   }
+
+   footer {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0 20px;
+   }
+
+   .footer-propos, .footer-hebergements, .footer-assistance {
+      
+      margin: 5px;
+   }
+
+   .titre-activites {
+
+      padding-left: 20px;
+   }
+
+
+} 
